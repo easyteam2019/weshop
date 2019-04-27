@@ -28,6 +28,11 @@
 		<module>weshop-admin-ui</module>
         <module>weshop-wechat</module>
 		<module>weshop-wechat-ui</module>
+
+		<module>weshop-config-server</module>
+		<module>weshop-api-gateway</module>
+
+
 		<module>weshop-example</module>
         <module>weshop-eureka-server</module>
         <module>weshop-framework</module>
@@ -125,6 +130,12 @@
 				<groupId>com.qcloud</groupId>
 				<artifactId>cos_api</artifactId>
 				<version>5.4.4</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-log4j12</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<dependency>
